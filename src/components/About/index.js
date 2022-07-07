@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 import {
   faAngular,
   faCss3,
@@ -6,20 +6,23 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
+} from "@fortawesome/free-brands-svg-icons";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.scss";
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    let timeoutid = setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 4000);
+    return () => {
+      clearTimeout(timeoutid);
+    };
+  }, []);
 
   return (
     <>
@@ -28,7 +31,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
               idx={15}
             />
           </h1>
@@ -73,7 +76,7 @@ const About = () => {
       </div>
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
