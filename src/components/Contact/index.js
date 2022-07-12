@@ -24,10 +24,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
-        form.current,
-        'your-token'
+        'service_345qjgl',
+        'template_gvnz3yz',
+        document.querySelector('form'),
+        '8RtJeAA4znkqZ5HCk'
       )
       .then(
         () => {
@@ -92,7 +92,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
+        {/* <div className="info-map">
           Slobodan Gajić,
           <br />
           Serbia,
@@ -109,7 +109,7 @@ const Contact = () => {
               <Popup>Sloba lives here, come over for a cup of coffee :</Popup>
             </Marker>
           </MapContainer>
-        </div>
+        </div> */}
       </div>
       <Loader type="pacman" />
     </>
