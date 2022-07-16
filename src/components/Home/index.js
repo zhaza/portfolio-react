@@ -1,40 +1,41 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
-import Logo from './Logo'
-import './index.scss'
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import Headshot from "../../assets/headshot.jpg";
+import "./index.scss";
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = ['i', 'k', 'h', 'a', 'i', 'l']
+  const nameArray = [" ", "M", "i", "k", "h", "a", "i", "l"];
   const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+    "a",
+    " ",
+    "w",
+    "e",
+    "b",
+    " ",
+    "d",
+    "e",
+    "v",
+    "e",
+    "l",
+    "o",
+    "p",
+    "e",
+    "r",
+    ".",
+  ];
 
   useEffect(() => {
     let timeoutid = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
+      setLetterClass("text-animate-hover");
+    }, 4000);
     return () => {
-        clearTimeout(timeoutid)
-    }
-  }, [])
+      clearTimeout(timeoutid);
+    };
+  }, []);
 
   return (
     <>
@@ -46,10 +47,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            />
+
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -63,17 +61,19 @@ const Home = () => {
             />
           </h1>
           <h2>FullStack Developer / Data/Financial Analyst</h2>
-          <a href ="/Resume.pdf" target = "_blank" className='flat-button'>RESUME</a>
+          <a href="/Resume.pdf" target="_blank" className="flat-button">
+            RESUME
+          </a>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        <img src={Headshot} alt="headshot" id="headshot" />
       </div>
 
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
