@@ -1,0 +1,34 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/library.png",
+            "title": "GGWP",
+            "description": "React, JSX, Tailwind, Jest",
+            "url": "http://google.com"
+        },
+        {
+            "cover": "/portfolio/library.png",
+            "title": "Library",
+            "description": "JavaScript, Css, HTML",
+            "url": "https://zhaza.github.io/library/"
+        },
+        {
+            "cover": "/portfolio/calculator.png",
+            "title": "Calculator",
+            "description": "JavaScript, Css, HTML",
+            "url": "https://zhaza.github.io/calculator/"
+        },
+        {
+            "cover": "/portfolio/etch.png",
+            "title": "Etch-A-Sketch",
+            "description": "JavaScript, Css, HTML",
+            "url": "https://zhaza.github.io/etch/"
+        },
+        {
+            "cover": "/portfolio/rock-paper-scissor.png",
+            "title": "Rock-Paper-Scissor",
+            "description": "JavaScript, Css, HTML",
+            "url": "https://zhaza.github.io/rps-game/"
+        }
+    ]
+}
