@@ -8,7 +8,7 @@ import "./index.scss";
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = [" ", "M", "i", "k", "h", "a", "i", "l"];
+  const nameArray = [" ", "M", "i", "k", "h", "a", "i", "l", ","];
   const jobArray = [
     "a",
     " ",
