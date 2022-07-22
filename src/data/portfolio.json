@@ -1,10 +1,10 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/library.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/portfolio/angelRUs.png",
+            "title": "Angel's R Us",
+            "description": "Java, Javascript, Css, HTML",
+            "url": "https://zhaza.github.io/Final-Project/index.html"
         },
         {
             "cover": "/portfolio/library.png",
