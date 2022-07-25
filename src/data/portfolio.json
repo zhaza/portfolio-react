@@ -8,9 +8,21 @@
         },
         {
             "cover": "/portfolio/library.png",
+            "title": "Todo",
+            "description": "React, JavaScript, Css, HTML",
+            "url": "https://zhaza.github.io/library/"
+        },
+        {
+            "cover": "/portfolio/library.png",
             "title": "Library",
             "description": "JavaScript, Css, HTML",
             "url": "https://zhaza.github.io/library/"
+        },
+        {
+            "cover": "/portfolio/weather-api.png",
+            "title": "Weather API",
+            "description": "JavaScript, Css, HTML",
+            "url": "https://zhaza.github.io/weather-api/"
         },
         {
             "cover": "/portfolio/calculator.png",
