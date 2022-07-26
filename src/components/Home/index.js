@@ -73,8 +73,6 @@ const Home = () => {
           </div>
         </div>
         <img src={Headshot} alt="headshot" id="headshot" />
-        {/* <div className="overlay">
-        </div> */}
       </div>
 
       <Loader type="pacman" />

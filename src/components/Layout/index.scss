@@ -1,6 +1,6 @@
   .App {
     display: grid;
-    grid-template-columns: .5fr 6fr 6fr;
+    grid-template-columns: .5fr 11.5fr;
     height: 100vh;
   }
 
@@ -33,6 +33,8 @@
   .container.contact-page,
   .container.about-page,
   .container.portfolio-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     .text-zone {
       display: flex;
