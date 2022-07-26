@@ -63,16 +63,18 @@ const Home = () => {
           </h1>
           <br />
           <h2>FullStack Developer / Data/Financial Analyst</h2>
-          <a href="/Resume.pdf" target="_blank" className="flat-button">
-            RESUME
-          </a>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <div>
+            <a href="/Resume.pdf" target="_blank" className="flat-button">
+              RESUME
+            </a>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+          </div>
         </div>
-        <div className="overlay">
-          <img src={Headshot} alt="headshot" id="headshot" />
-        </div>
+        <img src={Headshot} alt="headshot" id="headshot" />
+        {/* <div className="overlay">
+        </div> */}
       </div>
 
       <Loader type="pacman" />
