@@ -99,12 +99,6 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-wrap">
-          <div className="map-info">
-            Mikhail Jackson
-            <br />
-            Seattle, WA (USA)
-            <br />
-          </div>
           <MapContainer
             center={[47.6062, -122.3321]}
             zoom={13}
@@ -116,7 +110,7 @@ const Contact = () => {
             />
             <Marker position={[47.6062, -122.332109]}>
               <Popup>
-                Seattle <br /> WA
+                Seattle <br /> WA (USA)
               </Popup>
             </Marker>
           </MapContainer>
