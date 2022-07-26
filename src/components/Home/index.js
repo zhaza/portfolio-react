@@ -8,24 +8,8 @@ import "./index.scss";
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = [" ", "M", "i", "k", "h", "a", "i", "l", ","];
-  const jobArray = [
-    "a",
-    " ",
-    "w",
-    "e",
-    "b",
-    " ",
-    "d",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-    ".",
+  const nameArray = [" ", "M", "i", "k", "h", "a", "i", "l", " ", "!"];
+  const jobArray = ["I", " ", "d", "e", "v", ".",
   ];
 
   useEffect(() => {
