@@ -1,4 +1,5 @@
 .page {
+    margin-left: 60px;;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -14,7 +15,7 @@
     opacity: 0.6;
     position: absolute;
     bottom: 0;
-    left: 120px;
+    left: 30px;
     font-size: 18px;
     font-family: 'La Belle Aurore', cursive;
   }
@@ -25,7 +26,7 @@
 
   .container {
     width: 100%;
-    will-change: contents;
+    // will-change: contents;
     height: 90%;
     min-height: 566px;
     position: absolute;
@@ -38,19 +39,30 @@
     animation-delay: 1s;
   }
 
+  .container.home-page,
   .container.contact-page,
   .container.about-page,
   .container.portfolio-page {
 
+    .text-zone {
+      position: absolute;
+      top: 50%;
+      margin-left: 5%;
+      transform: translateY(-50%);
+      max-width: 100%;
+      width: 450px;
+      display: table-cell;
+      max-height: 90%;
+    }
+
       h1 {
         font-size: 53px;
         font-family: 'Coolvetica';
-        color: #ffd700;
+        color: white;
         font-weight: 400;
         margin-top: 0;
         position: relative;
         margin-bottom: 40px;
-        left: -10px;
 
         &:before {
           content: '<h1>';
@@ -59,7 +71,6 @@
           font-size: 18px;
           position: absolute;
           margin-top: -10px;
-          left: -10px;
           opacity: 0.6;
           line-height: 18px;
         }
@@ -71,9 +82,8 @@
           font-size: 18px;
           line-height: 18px;
           position: absolute;
-          left: -30px;
+          left: 0;
           bottom: -20px;
-          margin-left: 20px;
           opacity: 0.6;
         }
       }
@@ -96,16 +106,6 @@
         }
       }
 
-    .text-zone {
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 35%;
-      vertical-align: middle;
-      display: table-cell;
-      max-height: 90%;
-    }
 
     .text-animate-hover {
       &:hover {

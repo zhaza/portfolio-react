@@ -18,7 +18,7 @@ const About = () => {
   useEffect(() => {
     let timeoutid = setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 4000);
+    }, 3000);
     return () => {
       clearTimeout(timeoutid);
     };
@@ -40,7 +40,7 @@ const About = () => {
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
-          <p align="LEFT">
+          <p>
             I'm quietly confident, naturally curious, and perpetually working on
             improving my chops one engineering problem at a time.
           </p>

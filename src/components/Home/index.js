@@ -59,7 +59,9 @@ const Home = () => {
               strArray={jobArray}
               idx={20}
             />
+            <br />
           </h1>
+          <br />
           <h2>FullStack Developer / Data/Financial Analyst</h2>
           <a href="/Resume.pdf" target="_blank" className="flat-button">
             RESUME
@@ -68,7 +70,9 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <img src={Headshot} alt="headshot" id="headshot" />
+        <div className="overlay">
+          <img src={Headshot} alt="headshot" id="headshot" />
+        </div>
       </div>
 
       <Loader type="pacman" />
