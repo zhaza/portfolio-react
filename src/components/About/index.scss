@@ -1,14 +1,14 @@
 h1.about-title {
   &:after {
-    top: 6.5em;
+    top: 5em;
     left: 2.4em;
   }
 }
 
 .stage-cube-cont {
-    max-width: 500px;
+    max-width: 300px;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .cubespinner {
