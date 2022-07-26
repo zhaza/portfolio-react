@@ -44,7 +44,7 @@ const Contact = () => {
     <>
       <div className="container contact-page">
         <div className="text-zone">
-          <h1>
+          <h1 className="contact-title">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"]}
@@ -98,28 +98,30 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Mikhail Jackson
-          <br />
-          Seattle, WA (USA)
-          <br />
-        </div>
-        <div className="map-wrap">
-          <MapContainer
-            center={[47.6062, -122.3321]}
-            zoom={13}
-            scrollWheelZoom={false}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[47.6062, -122.332109]}>
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
-            </Marker>
-          </MapContainer>
+        <div class="map-container">
+          <div className="map-info">
+            Mikhail Jackson
+            <br />
+            Seattle, WA (USA)
+            <br />
+          </div>
+          <div className="map-wrap">
+            <MapContainer
+              center={[47.6062, -122.3321]}
+              zoom={13}
+              scrollWheelZoom={false}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[47.6062, -122.332109]}>
+                <Popup>
+                  Seattle <br /> WA
+                </Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />

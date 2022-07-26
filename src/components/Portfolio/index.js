@@ -44,13 +44,15 @@ const Portfolio = () => {
   return (
     <>
       <div className="container portfolio-page">
-        <h1 className="page-title">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={"Portfolio".split("")}
-            idx={15}
-          />
-        </h1>
+        <div class="text-zone">
+          <h1 className="port-title">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={"Portfolio".split("")}
+              idx={15}
+            />
+          </h1>
+        </div>
         <div>{renderPortfolio(portfolioData.portfolio)}</div>
       </div>
       <Loader type="pacman" />

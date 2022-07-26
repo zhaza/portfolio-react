@@ -1,11 +1,14 @@
+h1.about-title {
+  &:after {
+    top: 6.5em;
+    left: 2.4em;
+  }
+}
+
 .stage-cube-cont {
-  max-width: 50%;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 40%;
-    right: 0;
-    z-index: -5;
   }
 
   .cubespinner {
@@ -76,5 +79,11 @@
     }
     83% {
       transform: rotateX(90deg);
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .stage-cube-cont {
+      transform: translateY(25%);
     }
   }
