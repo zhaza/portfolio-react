@@ -77,12 +77,13 @@
         a.portfolio-link {
             &:after {
                 content: 'PORTFOLIO';
-                transform: translateX(-55%);
+                transform: translateX(-40%);
             }
         }
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+                transform: translateX(-50%);
             }
         }
         a.active {
