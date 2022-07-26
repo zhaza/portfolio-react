@@ -1,11 +1,22 @@
 h1.contact-title {
+  margin-bottom: .25em;
   &:after {
     top: 6.5em;
     left: 2.4em;
   }
 }
 
+@media screen and (max-width: 400px) {
+  h1.contact-title {
+    &:after {
+      top: 10em;
+      left: 2.4em;
+    }
+  }
+}
+
 .contact-form {
+  max-width: 50em;
   width: 100%;
   margin-top: 20px;
 
@@ -39,8 +50,8 @@ h1.contact-title {
     }
   }
 
-  input[type='text'],
-  input[type='email'] {
+  input[type="text"],
+  input[type="email"] {
     width: 100%;
     border: 0;
     background: #115173;
@@ -79,38 +90,39 @@ h1.contact-title {
   }
 }
 
-.map-container {
-  max-width: 50em;
+.map-wrap {
+  max-width: 35em;
   width: 100%;
+  height: 80%;
+  margin-right: 7em;
+}
 
-  .leaflet-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: backInRight 1s 1.2s;
-    animation-fill-mode: forwards;
-  }
+.leaflet-container {
+  margin-left: 6em;
+  position: relative;
+  top: -10em;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+  z-index: -2;
+}
 
-  .map-info {
-    background: #000;
-    width: 10em;
-    height: 3em;
-    padding: 20px;
-    color: #fff;
-    font-family: 'Helvetica';
-    font-size: 17px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
-
-    span {
-      font-size: 16px;
-
-      span {
-        color: #ffd700;
-      }
-    }
-  }
+.map-info {
+  float: right;
+  position: relative;
+  background: #000;
+  width: 10em;
+  height: 3em;
+  top: .9em;
+  right: -2.7em;
+  padding: 20px;
+  color: #fff;
+  font-family: "Helvetica";
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
 }
